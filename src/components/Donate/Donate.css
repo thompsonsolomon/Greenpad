@@ -1,0 +1,183 @@
+.wrapper {
+  height: calc(100vh - 100px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.DonateMainWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-direction: column-reverswe; */
+  width: 90%;
+}
+.bankdetails_container {
+  display: flex;
+  align-items: center;
+}
+.imgbd {
+  background-image: url("../Asset/Images/001.jpg");
+  width: 70%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Donatecontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  background-color: rgb(0, 165, 79);
+  width: 70%;
+  height: 70vh;
+  -webkit-box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  gap: 30px;
+  position: relative;
+}
+
+.donateCardOverlay{
+  position: absolute;
+  background: var(--primaryBacgkround);
+  width: 90vw;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.see{
+  display: none !important;
+}
+.Donatecontainer h1 {
+  font-size: 20px;
+  color: white;
+}
+.Donatecontainer h2 {
+  font-size: 18px;
+  color: white;
+}
+.AccountCon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.Donatecontainer .Back {
+  font-size: 35px !important;
+  color: whitesmoke;
+  float: left;
+  display: flex;
+  justify-content: flex-end;
+  align-self: flex-end;
+  position: absolute;
+  cursor: pointer;
+  top: 10vh;
+  padding: 0px 50px;
+  width: 100%;
+}
+
+.Number {
+  font-size: 18px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.bankName {
+  color: white;
+  font-size: 12px;
+}
+.icon {
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: 800;
+  transition: all ease-in-out 0.5s;
+}
+.icon:hover {
+  color: tomato;
+}
+.iconCon {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  padding: 0px 20px;
+}
+span {
+  padding: 0px 10px 0px 0px;
+}
+@media (max-width: 768px) {
+  .Donatecontainer {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+.donateCard {
+  background-color: var(--primarybackground);
+
+  background-image: linear-gradient(
+    180deg,
+    transparent,
+    rgba(37, 37, 37, 0.61),
+    #111
+  );
+  flex: 6;
+  height: fit-content;
+  -webkit-box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  text-align: left;
+  flex-direction: column;
+  padding: 80px 20px;
+}
+.donateCard h1 {
+  color: white;
+  font-size: 2.5rem;
+  padding-bottom: 10px;
+}
+.donateCard h3 {
+  color: #b3a9a9;
+  padding: 10px;
+  font-weight: 700;
+}
+.donateCard .donatebtn {
+  background-color: tomato;
+  padding: 10px 8px;
+  color: white;
+  font-weight: 700;
+  font-size: 14px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+}
+.DonateImageCon {
+  flex: 6;
+}
+.DonateImageCon img{
+  width: 570px;
+}
+
+
+@media only screen and (max-width: 972px) {
+  .DonateImageCon{
+    display: none;
+  }
+  .donateCard{
+    background-image: url("../Asset/Images/donate.jpg");
+    background-repeat: no-repeat;
+    background-position: calc(10% - 1px);
+    background-size:cover;
+    text-align: center;
+  }
+  .donateCard h1, .donateCard h3{
+    color: #181515;
+  }
+}

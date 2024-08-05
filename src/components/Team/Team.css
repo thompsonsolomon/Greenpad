@@ -1,0 +1,91 @@
+.TeamContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.teamWrapper{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    gap: 30px;
+    margin: 40px;
+}
+.teamcardCon{
+    display:flex;
+    gap: 30px;
+    justify-content: space-between;
+    width: 100%;
+}
+@media (max-width:768px) {
+    .teamcardCon{
+      flex-direction: column;
+    }
+}
+
+.item{
+
+    width: 100%;
+    padding: 15px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f6f6f6;
+    letter-spacing: .1px;
+    font-size: 14px;
+    box-shadow: 0 0.1rem 0.7rem rgba(0, 0, 0, .10);
+    border: 1px solid rgba(0, 0, 0, 0);
+
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+}
+.item .imageCon img{
+    padding: 0.2rem;
+    border-radius: 50%;
+    border: 1px solid #dee2e6!important;
+    vertical-align: middle;
+    width: 80px;
+    height: 80px;
+}
+.imageCon{
+    height: 80px;
+    overflow:hidden;
+}
+
+.item .textCon{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap:20px;
+}
+
+.item .textCon .nameCon h2{
+    text-transform: capitalize;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #212529;
+    text-align: left;
+}
+
+.item .textCon .nameCon p{
+    color: #6c757d!important;
+    letter-spacing: .1px;
+    font-size: 14px;
+    text-align: left;
+}
+
+
+.item .textCon .sociaIconCon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.item .textCon .sociaIconCon i{
+    font-size:20px;
+    color: rgb(0, 165, 79);
+
+}

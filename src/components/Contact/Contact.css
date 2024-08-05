@@ -1,0 +1,182 @@
+/* :: 22.0 Contact Area CSS */
+.Contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.contact_container{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    flex-direction: column;
+}
+
+.contact_map-area{
+    width: 100%;
+}
+
+.contact-contect-area_wrapper{
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.contact-content-area {
+    position: relative;
+    padding: 30px;
+    box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.15);
+    top: -100px;
+    background-color: #ffffff;
+}
+
+.contact-content-area .contact-content {
+    position: relative;
+    text-align: center;
+}
+
+.Location::-webkit-scrollbar{
+    display: none !important;
+}
+@media only screen and (max-width: 767px) {
+    .contact-content-area .contact-content {
+        margin-bottom: 50px;
+    }
+
+    .formfirstCon{
+        flex-direction: column;
+    }
+}
+
+.contact-content-area .contact-content h4 {
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .contact-content-area .contact-content h4 {
+        font-size: 18px;
+    }
+}
+
+.contact-content-area .contact-content p {
+    color: #636363;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .contact-content-area .contact-content p {
+        font-size: 12px;
+    }
+}
+
+.contact-content-area .contact-content p:last-child {
+    margin-bottom: 0;
+}
+
+.contact-content-area .contact-content::after {
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background-color: #d2d2d5;
+    content: '';
+    right: -15px;
+    top: 0;
+}
+
+@media only screen and (max-width: 767px) {
+    .contact-content-area .contact-content::after {
+        display: none;
+    }
+    .formfirstCon{
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+.contact-content-area .col-12:last-child .contact-content::after {
+    display: none;
+}
+
+.contact-content-area .col-12:last-child .contact-content:last-child {
+    margin-bottom: 0;
+}
+
+.contact-form-area label {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.contact-form-area label .required {
+    color: tomato;
+    font-weight: 800;
+}
+
+
+.contact-form-area .form-control {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, .4);
+    font-size: 16px !important;
+    font-weight: 700;
+    margin-bottom: 30px;
+    border: 1px solid #ebebeb;
+    border-radius: 4px;
+    padding: 15px 30px;
+    color: white;
+    outline: none;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+}
+
+.contact-form-area .form-control:focus {
+    box-shadow: none;
+    border-color:tomato;
+}
+
+.contact-form-area textarea.form-control {
+    height: 150px;
+}
+.contact-form-area .form-control::placeholder{
+    color: white;
+}
+.formCon{
+    margin: 0px !important;
+}
+.section-heading{
+    color: white;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.section-heading h2{
+    color: white;
+    font-size: 30px;
+}
+
+.formfirstCon{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.btn{
+    margin-top: 5px;
+    padding: 9px 19px;
+    background-color: rgba(255, 99, 71, 0.5);
+    border: 2px solid tomato;
+    border-radius: 5px;
+    outline: none;
+    font-size: 14px;
+    cursor: pointer;
+    color: white;
+    transition: all ease-in-out .5s;
+}
+.btn:hover{
+    color: tomato;
+    box-shadow: 10px 5px 10px 0px white
+}

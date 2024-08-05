@@ -1,0 +1,80 @@
+.HeaderCon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(0, 165, 79);
+  /* #00a54f */
+  font-family: sans-serif;
+}
+.HeaderWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  padding: 10px 0;
+}
+.HeaderCon nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  color: white;
+}
+.HeaderCon nav ul {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  gap: 70px;
+}
+.HeaderCon img {
+  width: 40%;
+  /* border-radius: 50%; */
+}
+.Donat {
+  padding: 9px 19px;
+  background-color: rgba(255, 99, 71, 0.5);
+  border: 2px solid tomato;
+  border-radius: 5px;
+  outline: none;
+  font-size: 14px;
+  cursor: pointer;
+  width: fit-content;
+}
+.active {
+  border-bottom: 1px solid rgb(255, 99, 71);
+}
+.hambugger {
+  display: none;
+}
+.hambugger button {
+  font-size: 30px;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: tomato;
+}
+
+/* ==================== Responsiveness =============== */
+
+@media (max-width: 700px) {
+  .HeaderCon  nav {
+    transition: all ease-in-out 20s;
+  }
+  .HeaderCon nav ul {
+    flex-direction: column ;
+    background-color: rgb(0, 165, 79);
+    position: absolute;
+    z-index: 999;
+    width: 70%;
+    height: fit-content;
+    align-items: flex-start;
+    gap: 30px;
+    padding:20px;
+    transition:all ease-in-out 1s;
+
+  }
+  .hambugger {
+    display: block;
+  }
+}
