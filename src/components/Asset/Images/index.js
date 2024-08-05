@@ -31,7 +31,6 @@ import Img21 from "./donate.jpg";
 // testimonials and interviews 
 
 import Interview from "./018.mp4";
-import testimonial_1 from "./019.mp4"
 import testimonial_2 from "./020.mp4"
 
 // SDG Images 
@@ -52,7 +51,6 @@ export {
   MissionImg,
   WhatWedo,
   Interview,
-  testimonial_1,
   testimonial_2,
   Img1,
   Img2,

@@ -2,7 +2,7 @@ import React from "react";
 import "./Medial.css";
 import { Link } from "react-router-dom";
 import { Data } from "../../dummyData";
-import { Interview, testimonial_1, testimonial_2 } from "../Asset/Images";
+import { Interview, testimonial_2 } from "../Asset/Images";
 
 function Medial() {
   const ImgData = Data;
