@@ -51,7 +51,6 @@ export {
   MissionImg,
   WhatWedo,
   Interview,
-  testimonial_1,
   testimonial_2,
   Img1,
   Img2,
