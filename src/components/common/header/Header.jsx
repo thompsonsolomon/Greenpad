@@ -38,7 +38,7 @@ function Header() {
 
       <div className="hambugger">
         <button onClick={() => HandletoggleMenu(!toggleMenu)}>
-          <i className="bi bi-list">=</i>
+          <i className="bi bi-list"></i>
         </button>
       </div>
     </div> 
